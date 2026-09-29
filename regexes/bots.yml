@@ -5,6 +5,54 @@
 # @license http://www.gnu.org/licenses/lgpl.html LGPL v3 or later
 ###############
 
+- regex: 'kiwix-bot/(\d+[\-.\da-z]+) \(minibrain-(probe|scanner)\)'
+  name: 'Kiwix bot (minibrain)'
+  category: 'Site Monitor'
+  url: 'https://github.com/kiwix/minibrain/'
+  producer:
+    name: Kiwix
+    url: 'https://www.kiwix.org/'
+- regex: 'kiwix-bot/(\d+[\-.\da-z]+) \(([a-z\d\-]+)-scraper\)'
+  name: 'Kiwix bot (scraper)'
+  category: 'Crawler'
+  url: 'https://github.com/openzim/'
+  producer:
+    name: Kiwix
+    url: 'https://www.kiwix.org/'
+- regex: 'kiwix-bot/(\d+[\-.\da-z]+) \(zimit\)'
+  name: 'Kiwix bot (zimit)'
+  category: 'Crawler'
+  url: 'https://www.kiwix.org/'
+  producer:
+    name: Kiwix
+    url: 'https://www.kiwix.org/'
+- regex: 'kiwix-bot/(\d+[\-.\da-z]+) \(zimscraperlib\)'
+  name: 'Kiwix bot (scraper)'
+  category: 'Crawler'
+  url: 'https://github.com/openzim/python-scraperlib/'
+- regex: 'kiwix-bot/(\d+[\-.\da-z]+) \(testbench\)'
+  name: 'Kiwix bot (testbench)'
+  category: 'Benchmark'
+  url: 'https://github.com/kiwix/testbench/'
+  producer:
+    name: Kiwix
+    url: 'https://www.kiwix.org/'
+- regex: 'kiwix-bot/(\d+[\-.\da-z]+) \(mirrors-qa\)'
+  name: 'Kiwix bot (mirrors-qa)'
+  category: 'Benchmark'
+  url: 'https://www.kiwix.org/'
+  producer:
+    name: Kiwix
+    url: 'https://www.kiwix.org/'
+- regex: 'kiwix-bot/(\d+[\-.\da-z]+) \(([a-z\d\-\_]+)\)'
+  name: 'Kiwix bot ($2)'
+  category: 'Crawler'
+  url: 'https://github.com/kiwix/'
+# Generic kiwix bots
+- regex: 'kiwix-bot/(\d+[\-.\da-z]+)'
+  name: 'Kiwix bot'
+  url: 'https://github.com/kiwix/'
+
 - regex: 'WireReaderBot'
   name: 'WireReaderBot'
   category: 'Feed Fetcher'
